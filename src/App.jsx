@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './Navbar'
-import Centerbar from './Centerbar'
+import Navbar from './components/Navbar'
+import Centerbar from './components/Centerbar'
 
 function App() {
   const [count, setCount] = useState(0)

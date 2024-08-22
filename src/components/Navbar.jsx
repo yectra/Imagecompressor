@@ -3,12 +3,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import myLogo from './assets/logo.jpg';
+import myLogo from '../assets/logo.jpg';
 import LanguageIcon from '@mui/icons-material/Language';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -32,7 +32,7 @@ export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{ bgcolor: "#FFFFFF", color: "black" }}>
+      <AppBar position="fixed" sx={{ bgcolor: "#f5f5f5", color: "black" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -74,7 +74,7 @@ export default function ButtonAppBar() {
           <img src={myLogo} style={{ height: "40px" }} alt="logo" onClick={handleReload} />
           <div onClick={handleReload}>
             <Typography variant="h6" component="div" sx={{ fontWeight: "bold", fontSize: "18px", color: "Black", cursor: "pointer" }}>
-              Image compressor
+              JPG Converter
             </Typography>
           </div>
         </Toolbar>
