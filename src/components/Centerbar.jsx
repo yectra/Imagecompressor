@@ -107,20 +107,7 @@ const Centerbar = () => {
           {selectedImage && (
             <Box sx={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column", mt: 3, width: "100%"}}>
               <img src={URL.createObjectURL(selectedImage)} alt="Selected" style={{ maxWidth: '100%', maxHeight: '200px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }} />
-              <Typography variant='body2' sx={{ mt: 2, mb: 1, color: "#34495e", fontFamily: "'Roboto', sans-serif" }}>
-                Compression Level: {compressionLevel}%
-              </Typography>
-              <Slider
-                value={compressionLevel}
-                onChange={handleCompressionLevelChange}
-                aria-labelledby="compression-slider"
-                valueLabelDisplay="auto"
-                step={10}
-                marks
-                min={10}
-                max={100}
-                sx={{ width: "100%", color: "#3498db" }}
-              />
+           
               <Button 
                 onClick={handleCompressAndDownload} 
                 sx={{
